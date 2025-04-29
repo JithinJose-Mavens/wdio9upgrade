@@ -36,7 +36,7 @@ jobs:
               run: npm run allureCombine
             - name: Upload Test Report
               if: always()
-              uses: actions/upload-artifact@v3
+              uses: actions/upload-artifact@v4
               with:
                   name: Allure report
                   path: test/.artifacts/allure-report/complete.html
