@@ -71,18 +71,18 @@ export const config = {
 			// grid with only 5 firefox instances available you can make sure that not more than
 			// 5 instances get started at a time.
 			'maxInstances': 1,
-			'browserName': 'chrome',
-			'wdio:chromedriverOptions': {
+			'browserName': 'MicrosoftEdge',
+			'wdio:edgedriverOptions': {
 				// or 'wdio:geckodriverOptions', 'wdio:edgedriverOptions'
 				//binary: './node_modules/chromedriver/lib/chromedriver/chromedriver', // or 'geckodriver', 'msedgedriver'
 			},
 
 			'acceptInsecureCerts': true,
-			'goog:chromeOptions': {
+			'ms:edgeOptions': {
 				args: [
 					'--window-size=1920,1080',
-					//'--incognito',
-					'--headless=new',
+					'--inprivate',
+					'--headless',
 					//'--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36',
 				],
 				excludeSwitches: ['enable-automation'],
