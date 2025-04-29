@@ -81,7 +81,7 @@ export const config = {
 			'goog:chromeOptions': {
 				args: [
 					'--window-size=1920,1080',
-					'--incognito',
+					//'--incognito',
 					'--headless=new',
 					//'--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36',
 				],
@@ -129,7 +129,7 @@ export const config = {
 	// with `/`, the base url gets prepended, not including the path portion of your baseUrl.
 	// If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
 	// gets prepended directly.
-	baseUrl: 'http://localhost',
+	//baseUrl: 'http://localhost',
 	//
 	// Default timeout for all waitFor* commands.
 	waitforTimeout: 12000,
@@ -145,7 +145,7 @@ export const config = {
 	// Services take over a specific job you don't want to take care of. They enhance
 	// your test setup with almost no effort. Unlike plugins, they don't add new
 	// commands. Instead, they hook themselves up into the test process.
-	services: ['devtools'],
+	//services: ['devtools'],
 	// Framework you want to run your specs with.
 	// The following are supported: Mocha, Jasmine, and Cucumber
 	// see also: https://webdriver.io/docs/frameworks
